@@ -1,4 +1,4 @@
-package com.example.demo.递归.记忆化;
+package study.递归.记忆化;
 
 import org.junit.jupiter.api.Test;
 

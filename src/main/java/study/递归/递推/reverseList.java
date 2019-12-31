@@ -1,6 +1,6 @@
-package com.example.demo.递归.递推;
+package study.递归.递推;
 
-import com.example.demo.model.ListNode;
+import study.model.ListNode;
 import org.junit.jupiter.api.Test;
 
 import java.util.Stack;

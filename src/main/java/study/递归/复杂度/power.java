@@ -1,4 +1,4 @@
-package com.example.demo.递归.复杂度;
+package study.递归.复杂度;
 
 import org.junit.jupiter.api.Test;
 

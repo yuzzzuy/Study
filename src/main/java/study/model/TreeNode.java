@@ -1,4 +1,4 @@
-package com.example.demo.model;
+package study.model;
 
 /**
  * @fileName: TreeNode

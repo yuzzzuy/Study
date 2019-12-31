@@ -1,4 +1,4 @@
-package com.example.demo.递归.递推;
+package study.递归.递推;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,6 +1,6 @@
-package com.example.demo.递归.总结;
+package study.递归.总结;
 
-import com.example.demo.model.ListNode;
+import study.model.ListNode;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -14,7 +14,8 @@ public class test1 {
     public void Solution() {
         System.out.println();
     }
-    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
 
+    public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
+        return l1;
     }
 }

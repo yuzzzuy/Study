@@ -1,6 +1,6 @@
-package com.example.demo.递归.复杂度;
+package study.递归.复杂度;
 
-import com.example.demo.model.TreeNode;
+import study.model.TreeNode;
 import org.junit.jupiter.api.Test;
 
 /**
