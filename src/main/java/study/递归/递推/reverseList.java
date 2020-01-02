@@ -16,7 +16,7 @@ public class reverseList {
     @Test
     public void test() {
         ListNode head = initListNode();
-        System.out.println(reverseList2(head).toString());
+        System.out.println(reverseList(head).toString());
     }
 
     //递归
