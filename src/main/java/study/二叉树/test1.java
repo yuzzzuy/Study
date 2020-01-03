@@ -14,13 +14,11 @@ import java.util.List;
  * @description: 二叉树的遍历
  */
 public class test1 {
-
     @Test
     public void test1() {
         TreeNode root = init();
         //TreeNode root = null;
         System.out.println(levelOrder1(root));
-
     }
 
     List<Integer> list = new ArrayList<>();
@@ -103,6 +101,7 @@ public class test1 {
         }
         return res;
     }
+
     //二叉树的层次遍历  广度优先搜索
     //递归
     public List<List<Integer>> levelOrder1(TreeNode root) {
@@ -124,13 +123,13 @@ public class test1 {
         if (res.size() <= depth) {
             // 当前层的第一个节点,需要new 一个list来存当前层.
             res.add(new LinkedList<>());
-            System.out.println("新一层："+res.size());
-            System.out.println("数值："+res.toString());
-            System.out.println("上一层深度："+depth);
+            System.out.println("新一层：" + res.size());
+            System.out.println("数值：" + res.toString());
+            System.out.println("上一层深度：" + depth);
         }
         // depth 层,把当前节点加入
         res.get(depth).add(root.getVal());
-        System.out.println("当前层的根节点:"+root.getVal());
+        System.out.println("当前层的根节点:" + root.getVal());
         // 递归的遍历下一层.
         levelOrderHelper(res, root.getLeft(), depth + 1);
         levelOrderHelper(res, root.getRight(), depth + 1);
