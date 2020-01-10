@@ -24,19 +24,20 @@ public class jsonTest {
      * 可以看到一个很明显的区别，一个最外面用的是 {  }  ，一个最外面用的是 [  ]  
      */
     public static void main(String[] args) throws IOException {
-        File file = new File("e://1.json");
+        File file = new File("E:\\项目素材\\Json\\chinese-poetry\\json\\authors.song.json");
         String params = null;
         try {
             params = FileUtils.readFileToString(file, "utf-8");
         } catch (Exception e) {
             System.out.println(e.getMessage());
         }
-        JSONObject jsonObject = JSONObject.parseObject(params);
-        System.out.println(jsonObject);
-        System.out.println(jsonObject.get("face"));
-        JSONArray jsonArray = JSONArray.parseArray(jsonObject.getString("face"));
-        JSONObject object = jsonArray.getJSONObject(0);
-        System.out.println(object);
-        System.out.println(object.getString("face_id"));
+        JSONArray jsonArray = JSONArray.parseArray(params);
+        JSONObject jsonObject = jsonArray.getJSONObject(0);
+        System.out.println(jsonObject.getString("name"));
+//
+//        JSONArray jsonArray = JSONArray.parseArray(jsonObject.getString("face"));
+//        JSONObject object = jsonArray.getJSONObject(0);
+//        System.out.println(object);
+//        System.out.println(object.getString("face_id"));
     }
 }
