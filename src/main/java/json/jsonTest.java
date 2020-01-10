@@ -34,10 +34,5 @@ public class jsonTest {
         JSONArray jsonArray = JSONArray.parseArray(params);
         JSONObject jsonObject = jsonArray.getJSONObject(0);
         System.out.println(jsonObject.getString("name"));
-//
-//        JSONArray jsonArray = JSONArray.parseArray(jsonObject.getString("face"));
-//        JSONObject object = jsonArray.getJSONObject(0);
-//        System.out.println(object);
-//        System.out.println(object.getString("face_id"));
     }
 }
