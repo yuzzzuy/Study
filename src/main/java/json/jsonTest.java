@@ -5,7 +5,6 @@ import com.alibaba.fastjson.JSONObject;
 import org.apache.commons.io.FileUtils;
 
 import java.io.File;
-import java.io.IOException;
 
 /**
  * @author WangChen
@@ -23,7 +22,7 @@ public class jsonTest {
      * 表示了包含2个JSONObject的JSONArray。
      * 可以看到一个很明显的区别，一个最外面用的是 {  }  ，一个最外面用的是 [  ]  
      */
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         File file = new File("E:\\项目素材\\Json\\chinese-poetry\\json\\authors.song.json");
         String params = null;
         try {
