@@ -23,6 +23,31 @@ public class test2 {
 
     }
 
+    @Test
+    void test1() {
+//        TreeNode treeNode = buildTree(, );
+//        System.out.println(treeNode.toString());
+    }
+
+
+//
+
+    //从中序与后序遍历序列构造二叉树
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        TreeNode root = new TreeNode();
+
+        //中序
+//        root.setLeft(new TreeNode(9));
+//        root.setVal(3);
+//        root.setRight(new TreeNode(15));
+//        //后序
+//        root.setLeft();
+//        root.setRight();
+//        root.setVal();
+        return root;
+    }
+
+
     //自顶而下思路
     private int answer;
 
