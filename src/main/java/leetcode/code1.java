@@ -13,7 +13,7 @@ import java.util.Arrays;
 public class code1 {
     @Test
     public void test() {
-        int[] nums = {2, 7, 11, 15};
+        int[] nums = {2, 0, 7, 11, 15};
         int target = 15;
         long begin = System.nanoTime();
         System.out.println(Arrays.toString(twoSum(nums, target)));
