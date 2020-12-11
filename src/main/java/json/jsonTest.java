@@ -15,12 +15,12 @@ import java.io.File;
 public class jsonTest {
     /**
      * JSONObject和JSONArray的数据表示形式
-     * JSONObject的数据是用 {  } 来表示的，
-     * 例如：   { "id" : "123", "courseID" : "huangt-test", "title" : "提交作业", "content" : null  }  
-     * JSONArray，顾名思义是由JSONObject构成的数组，用  [ { } , { } , ......  , { } ]  来表示
-     * 例如：[ {  "id" : "123", "courseID" : "huangt-test", "title" : "提交作业" }  ,  {  "content" : null, "beginTime" : 1398873600000  "endTime" } ] ； 
+     * JSONObject的数据是用 { } 来表示的，
+     * 例如： { "id" : "123", "courseID" : "huangt-test", "title" : "提交作业", "content" : null }
+     * JSONArray，顾名思义是由JSONObject构成的数组，用 [ { } , { } , ...... , { } ] 来表示
+     * 例如：[{ "id" : "123","courseID" : "huangt-test","title" : "提交作业" } , {"content" : null,"beginTime" : 1398873600000 "endTime" } ]；
      * 表示了包含2个JSONObject的JSONArray。
-     * 可以看到一个很明显的区别，一个最外面用的是 {  }  ，一个最外面用的是 [  ]  
+     * 可以看到一个很明显的区别，一个最外面用的是 { } ，一个最外面用的是 [ ]
      */
     public static void main(String[] args) {
         File file = new File("E:\\项目素材\\Json\\chinese-poetry\\json\\authors.song.json");
