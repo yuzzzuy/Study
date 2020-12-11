@@ -14,7 +14,6 @@ public class circlePrint {
         int[] b = print(m);
         System.out.println(Arrays.toString(b));
     }
-
     public static int[] print(int[][] a) {
         if (a.length == 0) {
             return new int[0];
