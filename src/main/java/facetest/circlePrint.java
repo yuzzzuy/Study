@@ -1,4 +1,4 @@
-package faceTest;
+package facetest;
 
 import java.util.Arrays;
 

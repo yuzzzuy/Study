@@ -1,4 +1,4 @@
-package faceTest;
+package facetest;
 
 /**
  * @author WangChen
