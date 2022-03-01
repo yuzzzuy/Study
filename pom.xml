@@ -15,7 +15,7 @@
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>
@@ -49,6 +49,30 @@
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 		</dependency>
+		<dependency>
+			<groupId>org.gitlab</groupId>
+			<artifactId>java-gitlab-api</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>easyexcel</artifactId>
+			<version>3.0.5</version>
+		</dependency>
+
+<!--		<dependency>-->
+<!--			<groupId>com.github.pengrad</groupId>-->
+<!--			<artifactId>java-telegram-bot-api</artifactId>-->
+<!--			<version>5.7.0</version>-->
+<!--		</dependency>-->
+
+		<dependency>
+			<groupId>org.telegram</groupId>
+			<artifactId>telegrambots</artifactId>
+			<version>5.7.1</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
