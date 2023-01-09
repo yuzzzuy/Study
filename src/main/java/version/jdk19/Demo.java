@@ -1,6 +1,7 @@
 package version.jdk19;
 
 import lombok.SneakyThrows;
+import sun.misc.Unsafe;
 
 import java.time.Duration;
 import java.util.Objects;

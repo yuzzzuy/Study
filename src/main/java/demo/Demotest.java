@@ -1,6 +1,5 @@
 package demo;
 
-import com.alibaba.fastjson.annotation.JSONPOJOBuilder;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -14,7 +13,6 @@ import java.util.Objects;
  * @description
  */
 @Data
-@JSONPOJOBuilder
 public class Demotest implements Serializable {
     private static final long serialVersionUID = -5038449244000338188L;
     private BigDecimal id;

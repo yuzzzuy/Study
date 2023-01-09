@@ -1,10 +1,14 @@
 package json;
 
-import com.alibaba.fastjson.JSONArray;
-import com.alibaba.fastjson.JSONObject;
-import org.apache.commons.io.FileUtils;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.extern.java.Log;
+import org.junit.jupiter.api.Assertions;
+import utils.JsonUtils;
 
-import java.io.File;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+import java.util.Arrays;
 
 /**
  * @author WangChen
@@ -22,16 +26,23 @@ public class jsonTest {
      * 表示了包含2个JSONObject的JSONArray。
      * 可以看到一个很明显的区别，一个最外面用的是 { } ，一个最外面用的是 [ ]
      */
-    public static void main(String[] args) {
-        File file = new File("E:\\项目素材\\Json\\chinese-poetry\\json\\authors.song.json");
-        String params = null;
-        try {
-            params = FileUtils.readFileToString(file, "utf-8");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-        JSONArray jsonArray = JSONArray.parseArray(params);
-        JSONObject jsonObject = jsonArray.getJSONObject(0);
-        System.out.println(jsonObject.getString("name"));
+    public static void main(String[] args) throws JsonProcessingException {
+        LocalDateTime now = LocalDateTime.now();
+        Person person = new Person();
+        person.setId("1234");
+        person.setName("John");
+        person.setSkills(Arrays.asList("Java","Linux","JS"));
+        person.setCreateTime(now);
+        System.out.println(person);
+        String json = JsonUtils.objToJsonString(person);
+        System.out.println(json);
+
+        String person1 = "{\"id\":\"1234\",\"name\":\"John\",\"skills\":[\"Java\",\"Linux\",\"JS\"],\"createTime\":\""+ DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(now)+"\"}";
+        Assertions.assertEquals(json, person1);
+
+        Person person2 = (Person) JsonUtils.jsonStringToObj(person1, Person.class);
+        System.out.println(person2.getName());
+        Assertions.assertEquals(person2.getName(), "John");
+        Assertions.assertEquals(person2.getSkills().toString(), "[Java, Linux, JS]");
     }
 }
