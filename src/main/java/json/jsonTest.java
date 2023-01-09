@@ -40,7 +40,7 @@ public class jsonTest {
         String person1 = "{\"id\":\"1234\",\"name\":\"John\",\"skills\":[\"Java\",\"Linux\",\"JS\"],\"createTime\":\""+ DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss").format(now)+"\"}";
         Assertions.assertEquals(json, person1);
 
-        Person person2 = (Person) JsonUtils.jsonStringToObj(person1, Person.class);
+        Person person2 = JsonUtils.jsonStringToObj(person1, Person.class);
         System.out.println(person2.getName());
         Assertions.assertEquals(person2.getName(), "John");
         Assertions.assertEquals(person2.getSkills().toString(), "[Java, Linux, JS]");

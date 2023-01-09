@@ -19,7 +19,7 @@ public class JsonUtils {
     public static String objToJsonString(Object obj) throws JsonProcessingException {
         return MAPPER.writeValueAsString(obj);
     }
-    public static Object jsonStringToObj(String jsonString ,Class<?> clas) throws JsonProcessingException {
+    public static <T>T jsonStringToObj(String jsonString ,Class<T> clas) throws JsonProcessingException {
         return MAPPER.readValue(jsonString,clas);
     }
 }
