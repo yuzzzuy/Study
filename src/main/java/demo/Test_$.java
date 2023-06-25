@@ -13,9 +13,9 @@ public class Test_$ {
 
     public static int dayOfYear(String date) {
         String[] split = date.split("-");
-        Integer year = new Integer(split[0]);
-        int month = new Integer(split[1]);
-        int day = new Integer(split[2]);
+        Integer year = Integer.valueOf(split[0]);
+        int month = Integer.parseInt(split[1]);
+        int day = Integer.parseInt(split[2]);
         Integer[] bigMonth = {1,3,5,7,8,10,12};
         Integer[] midMonth = {4,6,9,11};
         int ans = 0;
