@@ -1,7 +1,5 @@
 package se.demo;
 
-import cn.hutool.core.util.ReflectUtil;
-import org.apache.poi.util.StringUtil;
 
 /**
  * @author WangChen
@@ -19,7 +17,6 @@ public class Test {
 
         String str1 = "Hello\u0020World!";
         String str2 = "Hello World!";
-
 
 
         System.out.println(str1);
