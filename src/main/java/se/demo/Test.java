@@ -1,5 +1,6 @@
 package se.demo;
 
+import cn.hutool.core.util.ReflectUtil;
 import org.apache.poi.util.StringUtil;
 
 /**
@@ -11,10 +12,19 @@ import org.apache.poi.util.StringUtil;
 public class Test {
 
     public static void main(String[] args) {
-        String test = "head test.txt";
-        StringBuilder sb = new StringBuilder(test);
+//        String test = "head test.txt";
+//        StringBuilder sb = new StringBuilder(test);
+//
+//        System.out.println(isFlipedString(test, sb.reverse().toString()));
 
-        System.out.println(isFlipedString(test, sb.reverse().toString()));
+        String str1 = "Hello\u0020World!";
+        String str2 = "Hello World!";
+
+
+
+        System.out.println(str1);
+        System.out.println(str2);
+        System.out.println(str1.equals(str2));
     }
 
     public static boolean isFlipedString(String s1, String s2) {

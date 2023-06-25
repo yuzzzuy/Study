@@ -62,7 +62,11 @@
 			<artifactId>easyexcel</artifactId>
 			<version>3.1.1</version>
 		</dependency>
-
+		<dependency>
+			<groupId>cn.hutool</groupId>
+			<artifactId>hutool-all</artifactId>
+			<version>5.8.5</version>
+		</dependency>
 
 		<dependency>
 			<groupId>com.rabbitmq</groupId>
